@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c8_friday/sura_content.dart';
 import 'package:islami_c8_friday/sura_model.dart';
@@ -132,7 +133,7 @@ class QurabTab extends StatelessWidget {
             color: Theme.of(context).primaryColor,
           ),
           Text(
-            "Sura Name",
+            AppLocalizations.of(context)!.sura_names,
             style: GoogleFonts.elMessiri(
                 fontSize: 25, fontWeight: FontWeight.w500),
           ),

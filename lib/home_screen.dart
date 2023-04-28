@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c8_friday/tabs/ahadeth.dart';
 import 'package:islami_c8_friday/tabs/quran.dart';
 import 'package:islami_c8_friday/tabs/radio.dart';
@@ -29,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         Scaffold(
           appBar: AppBar(
-            title:
-                Text("Islami", style: Theme.of(context).textTheme.titleSmall),
+            title: Text(AppLocalizations.of(context)!.appTitle,
+                style: Theme.of(context).textTheme.titleSmall),
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: index,
@@ -41,19 +42,19 @@ class _HomeScreenState extends State<HomeScreen> {
             items: [
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/quran.png")),
-                  label: "Quran",
+                  label: AppLocalizations.of(context)!.quran,
                   backgroundColor: Theme.of(context).primaryColor),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/sebha.png")),
-                  label: "Sebha",
+                  label: AppLocalizations.of(context)!.sebha,
                   backgroundColor: Theme.of(context).primaryColor),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/radio.png")),
-                  label: "Radio",
+                  label: AppLocalizations.of(context)!.radio,
                   backgroundColor: Theme.of(context).primaryColor),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/ahadeth.png")),
-                  label: "Ahadeth",
+                  label: AppLocalizations.of(context)!.ahadeth,
                   backgroundColor: Theme.of(context).primaryColor),
             ],
           ),
