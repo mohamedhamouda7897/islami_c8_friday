@@ -10,7 +10,11 @@ class HadethContent extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/main_bg.png"),
+              image: AssetImage(
+                Theme.of(context).colorScheme.brightness == Brightness.light
+                    ? "assets/images/main_bg.png"
+                    : "assets/images/dark_main_bg.png",
+              ),
               fit: BoxFit.fill)),
       child: Scaffold(
         appBar: AppBar(

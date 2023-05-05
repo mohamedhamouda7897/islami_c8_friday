@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c8_friday/hadethModel.dart';
 import 'package:islami_c8_friday/hadeth_content.dart';
-
 class AhadethTab extends StatefulWidget {
   @override
   State<AhadethTab> createState() => _AhadethTabState();
@@ -23,16 +23,16 @@ class _AhadethTabState extends State<AhadethTab> {
         Image.asset("assets/images/hadeth_bg.png"),
         Divider(
           thickness: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.onBackground,
         ),
         Text(
-          "Ahadeth",
+          AppLocalizations.of(context)!.ahadeth,
           style:
               GoogleFonts.elMessiri(fontSize: 25, fontWeight: FontWeight.w500),
         ),
         Divider(
           thickness: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.onBackground,
         ),
         Expanded(
           child: ListView.separated(
