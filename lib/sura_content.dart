@@ -9,7 +9,6 @@ class SuraContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var args = ModalRoute.of(context)?.settings.arguments as SuraModel;
-
     return ChangeNotifierProvider(
       create: (context) => SuraDetailsProvider()..loadFile(args.index),
       builder: (context, child) {
