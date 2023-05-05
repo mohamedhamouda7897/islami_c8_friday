@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_c8_friday/sura_content.dart';
 import 'package:islami_c8_friday/sura_model.dart';
@@ -129,16 +130,16 @@ class QurabTab extends StatelessWidget {
           Image.asset("assets/images/quran_bg.png"),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onBackground,
           ),
           Text(
-            "Sura Name",
+            AppLocalizations.of(context)!.sura_names,
             style: GoogleFonts.elMessiri(
                 fontSize: 25, fontWeight: FontWeight.w500),
           ),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onBackground,
           ),
           Expanded(
             child: ListView.separated(
@@ -156,8 +157,8 @@ class QurabTab extends StatelessWidget {
                   },
                   child: Center(
                       child: Text(
-                    suraNames[index],
-                    style: GoogleFonts.quicksand(fontSize: 25),
+                        suraNames[index],
+                    style: Theme.of(context).textTheme.bodyMedium,
                   )),
                 );
               },
