@@ -23,7 +23,7 @@ class _AhadethTabState extends State<AhadethTab> {
         Image.asset("assets/images/hadeth_bg.png"),
         Divider(
           thickness: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.onBackground,
         ),
         Text(
           AppLocalizations.of(context)!.ahadeth,
@@ -32,7 +32,7 @@ class _AhadethTabState extends State<AhadethTab> {
         ),
         Divider(
           thickness: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.onBackground,
         ),
         Expanded(
           child: ListView.separated(

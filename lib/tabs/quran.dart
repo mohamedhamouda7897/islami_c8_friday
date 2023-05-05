@@ -130,7 +130,7 @@ class QurabTab extends StatelessWidget {
           Image.asset("assets/images/quran_bg.png"),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onBackground,
           ),
           Text(
             AppLocalizations.of(context)!.sura_names,
@@ -139,7 +139,7 @@ class QurabTab extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.onBackground,
           ),
           Expanded(
             child: ListView.separated(
@@ -157,8 +157,8 @@ class QurabTab extends StatelessWidget {
                   },
                   child: Center(
                       child: Text(
-                    suraNames[index],
-                    style: GoogleFonts.quicksand(fontSize: 25),
+                        suraNames[index],
+                    style: Theme.of(context).textTheme.bodyMedium,
                   )),
                 );
               },
