@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   label: AppLocalizations.of(context)!.quran,
                   backgroundColor: Theme.of(context).primaryColor),
               BottomNavigationBarItem(
-                  icon: const ImageIcon(AssetImage("assets/images/sebha.png")),
+                  icon: const ImageIcon(AssetImage("assets/images/sebha_gold.png")),
                   label: AppLocalizations.of(context)!.sebha,
                   backgroundColor: Theme.of(context).primaryColor),
               BottomNavigationBarItem(
