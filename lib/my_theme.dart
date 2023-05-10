@@ -36,7 +36,12 @@ class MyThemeData {
           bodySmall: GoogleFonts.elMessiri(
               fontSize: 20,
               fontWeight: FontWeight.w300,
-              color: Color(0xFF242424))),
+              color: Color(0xFF242424)),
+          displaySmall: GoogleFonts.cairo(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF242424)
+          )),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: lightColor,
           type: BottomNavigationBarType.shifting,
